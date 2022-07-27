@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>HTML Crash Course</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="html course" />
+    <meta name="description" content="Notes from YT course" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 "/>
+    
+    <!-- script, style tags can be used here too -->
+  </head>
+
+  <body>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+
+    <p>This is a paragraph</p>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem enim voluptate sunt voluptas corrupti quam eos sequi hic et error commodi quas, nisi, autem eaque eius consequuntur impedit exercitationem aspernatur.
+    </p>
+    <hr/> <!-- To draw a horizontal line we use this. -->
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        <br/>     <!-- This is a self ending element. Manual spaces/lines are ignored. To go to new line we need to use this. -->
+        Rem enim voluptate sunt voluptas 
+        <br></br>   
+        corrupti quam eos sequi hic et
+
+    <!-- 
+            <strong>  OR  <b>           -> Bold
+            <em> (emphasis) OR <i>      -> Italics
+    -->
+
+        error commodi quas, <strong>hello</strong> <em> how r u</em> nisi, 
+        
+        <small> By bye </small> <br/> 
+
+        <mark> Hee heh</mark>  autem eaque eius <del> my name is sanjay</del> consequuntur impedit 
+        
+        <ins> ok bye see u </ins>exercitationem 
+        
+        <sub> bbbb okay </sub>  aspe   <sup> i am studying in goa</sup>rnatur.
+    </p>
+
+   
+    <!-- 
+        Block level elements start from a new line & take up full width.               Ex: h, p, div
+        Inline elements doesnt start on new line & takes as much width as necessary.   Ex: strong, mark, small, span 
+    -->
+
+    <div> block1 </div>
+    <div> block2 </div> 
+   
+    <span> Inline 1</span>
+    <span> Inline 2</span>
+
+    <!-- 
+    There are 3 types of lists provided by HTML.
+    1. Unordered List. <ul>  <li> stands for List Item.
+    2. Ordered List. <ol>
+    3. Description List. <dl>   <dt> desc term,  <dd> desc definition.
+    -->
+
+    <ul>
+        <li> Bread </li>
+        <li> Milk </li>
+        <li> Eggs </li>
+    </ul>
+
+    <ol>
+        <li> Reach A </li>
+        <li> Turn left </li>
+        <li> Reach B </li>
+    </ol>
+
+    <dl>
+        <dt> Ice cream </dt>
+        <dd> Sweat & frozen </dd>    
+        <dt> Tea </dt>
+        <dd> Hot drink </dd>
+    </dl>
+
+    <!-- HTML Attributes: They provide additional info about HTML elements. 
+        For img: src, width, height, intuit are attributes. Defauly unit is pixels for h & w.
+    -->
+    
+    <img src = '1.png' width="200" height="200" alt = "Intuit"/>         <!-- self closing -->
+
+    <!-- 
+        Anchor tag : For hyperlinks.
+        target="_blank"  opens link in new tab.
+    -->
+    <a href = "https://google.com" target="_blank"> Google </a>
+
+    <a href="contact.html"> Contact </a>
+
+
+    <!-- Tables -->
+    
+    <table>
+        <thead>
+            <tr> 
+                <th> Heading 1</th>
+                <th> Heading 2</th>
+                <th> Heading 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td> Val1 </td>
+                <td> Val2 </td>
+                <td> Val3 </td>
+            </tr>
+            <tr>
+                <td> Val11 </td>
+                <td> Val21 </td>
+                <td> Val31 </td>
+            </tr>
+            <tr>
+                <td> Val11 </td>
+                <td> Val22 </td>
+                <td> Val33 </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Forms -->
+    
+    <form>
+
+        <!-- Telling that this label is for this input. -->
+        <label for="username"> Username </label> <br/>
+        <input type="text" id = "username" /> <br/>
+        
+        <label for ="about"> About you</label> <br/>
+        <textarea id="about"> </textarea> <br/>
+
+        <label for="country"> Country </label>
+        <select id = "country">
+            <option val = "india"> India </option>
+            <option val = "au"> AU </option>
+            <option val = "uk"> UK </option>
+        </select> <br/>
+
+        <label for=""> Job Type </label> <br/>
+        <input type = "radio" name = "jobtype" value = "partime" id = "partime" />
+        <label for="partime"> Parttime </label>
+        <br/>
+        <input type = "radio" name = "jobtype" value = "fullime" id = "fulltime" />
+        <label for="fulltime"> Fulltime </label> <br/>
+
+        <label for=""> Job Type </label> <br/>
+        <input type = "checkbox" name = "jobtypecb" value = "partime" id = "partimecb" />
+        <label for="partime"> Parttime </label>
+        <br/>
+        <input type = "checkbox" name = "jobtypecb" value = "fullime" id = "fulltimecb" />
+        <label for="fulltime"> Fulltime </label>
+
+        <button> Submit </button>
+
+    </form>
+
+  </body>
+</html>

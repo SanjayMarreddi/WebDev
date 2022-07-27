@@ -1,0 +1,8 @@
+/* CSS Module. */
+
+/*  Advantage of CSS modules is that Classes are locally scoped by default.
+  So, modules cant be used in child components  */
+
+.success{
+    color: green
+}
